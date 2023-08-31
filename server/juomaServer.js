@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 3000;
 // Start server
 app.listen(port, "0.0.0.0", () => {
-    console.log("Server running on port %PORT%".replace("%PORT%",HTTP_PORT))
+    console.log("Server running on port %PORT%".replace("%PORT%",port))
 });
 // Root endpoint
 app.get("/", (req, res, next) => {
