@@ -7,9 +7,6 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const cors = require('cors');
-app.use(cors());
-
 // Server port
 var HTTP_PORT = process.env.PORT;
 // Start server
